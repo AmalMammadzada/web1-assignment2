@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <title>Product Display</title>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
+  <script src="./Products.js"></script>
+  <div class="page-heading">Available Products</div>
   <div class="search-bar">
     <input type="text" id="search" placeholder="Search products...">
     <select id="category">
@@ -17,22 +18,17 @@
       <option value="skincare">skincare</option>
       <option value="groceries">groceries</option>
       <option value="home-decoration">home-decoration</option>
-      <!-- Add options dynamically based on available categories -->
     </select>
     <button id="searchButton">Search</button>
   </div>
   
   <div class="products-container" id="products-container"></div>
 
-  <div class="product-detail" id="product-detail-container"></div>
-
   <div class="pagination">
     <button id="prev">Previous</button>
-    <span id="page-number">Page 1</span>
+    <span id="pagination"></span>
     <button id="next">Next</button>
   </div>
 
-  <script src="./apiIntegration.js"></script>
-  <script src="./displayProduct.js"></script>
 </body>
 </html>

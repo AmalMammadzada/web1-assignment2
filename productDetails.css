@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #0f0419; /* Dark purple background color for the body */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
+.container {
+  max-width: 1200px;
+  background-color: #4d1b5a; /* Darker purple background color for the container */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.large-image {
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 3px solid #6b2c91; /* Purple border for the large image */
+}
+  
+  .thumbnail-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .thumbnail-images img {
+    width: 80px; /* Adjusting the width of thumbnail images */
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #6b2c91; /* Purple border for thumbnail images */
+  }
+  
+  .thumbnail-images img:hover {
+    transform: scale(1.1);
+  }
+  
+  .product-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 2px solid #6b2c91; /* Purple border for product details */
+    text-align: center; /* Align text to the center */
+  }
+  
+  .product-details h2 {
+    color: #6b2c91; /* Purple color for heading */
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center; /* center heading text */
+  }
+  
+  .product-details p {
+    margin: 10px 0;
+    color: #333; /* Dark text color */
+    text-align: center; /* Center product details */
+  }
+  
+  .product-details .details-label {
+    font-weight: bold; /* Makes the labels bold */
+    text-transform: uppercase;
+    color: #6b2c91; /* purple color for details label */
+  }
+  
